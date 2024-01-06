@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+
+<style>
+    body {
+        background: radial-gradient(rgb(122, 59, 59), rgb(230, 230, 202));
+        text-align: center;
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background: radial-gradient(rgb(244, 88, 88), black);
+        color: white;
+        text-align: center;
+        padding: 1em;
+    }
+
+    nav {
+        background-color: rgb(62, 96, 118);
+        text-align: center;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        margin: 10px;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+        color: #ffc107;
+    }
+
+    section {
+        background: radial-gradient(rgb(28, 188, 87), rgb(70, 5, 96));
+        padding: 20px;
+        margin: 10px;
+        width: 90%;
+        max-width: 1000px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+    }
+
+    .box {
+        margin: 20px;
+        padding: 20px;
+        overflow: none;
+        color: #fff;
+        text-align: center;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .animated-box {
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        align-items: center;
+    }
+
+    .fadeInUp {
+        animation-name: fadeInUp;
+    }
+
+    .fadeInDown {
+        animation-name: fadeInDown;
+    }
+
+    .fadeInLeft {
+        animation-name: fadeInLeft;
+    }
+
+    .fadeInRight {
+        animation-name: fadeInRight;
+    }
+
+    h3 {
+        background-color: rgb(187, 255, 131);
+        color: rgb(12, 4, 4);
+        text-align: center;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    footer {
+        background-color: rgb(15, 13, 5);
+        text-align: center;
+        padding: 10px;
+        color: white;
+        width: 90%;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        position: relative; 
+        bottom: 0; 
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 50%;
+        margin-top: 20px;
+    }
+
+    @media screen and (max-width: 767px) {
+        nav a {
+            flex-basis: 100%;
+        }
+
+        h1 {
+            font-size: 1.5em;
+        }
+
+        section {
+            width: 90%;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        nav {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        nav a {
+            flex-basis: auto;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        @media screen and (max-width: 767px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 10px 0;
+        display: block;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    section {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav a {
+        margin-right: 20px;
+    }
+
+    section {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    nav a {
+        margin-right: 50px;
+    }
+
+    section {
+        width: 70%;
+    }
+}
+    nav a {
+            margin: 0 20px;
+        }
+
+        section {
+            width: 70%;
+        }
+    }
+</style>
+
+<body>
+    <header>
+        <h1><marquee behavior="relative" direction="right">Shashank Gowda k</marquee></h1>
+        <h1 id="header-name">Web Developer</h1>
+    </header>
+    <nav>
+        <a href="#About">About</a>
+        <a href="#Education">Education</a>
+        <a href="#Skills">Skills</a>
+        <a href="#Projects">Projects</a>
+        <a href="#ContactUs">Contact Us</a>
+    </nav>
+    <section id="About" class="box animated-box fadeInLeft">
+        <h2>About Me</h2>
+        <img src="Screenshot 2024-01-06 085821.png" width="auto" height="auto" alt="Shashank Gowda Photo">
+        <p>
+            RV VIDYANIKETAN POST 8TH MILE<br>
+            MYSORE RD, RV VIDYANIKETAN, MAILASANDRA<br>
+            BENGALORE, KARNATAKA, 560059<br>
+            Country: INDIA<br>
+            <br>
+            Email ✉: <a href="mailto:shashankgowdak.btech23@rvu.edu.in" style="color: aliceblue;">shashankgowdak.btech23@rvu.edu.in</a><br>
+            Phone: <a href="tel:+917483937578" style="color: aliceblue;">+91 7483937578</a>
+        </p>
+    </section>
+
+    <section id="Education" class="box animated-box fadeInDown">
+        <h2>Education</h2>
+        <p>
+            <strong>Bachelor of Technology in Computer Science and Engineering<br>
+                RV University, Bangalore<br>
+                Graduated in 2027<br>
+                9 CGPA</strong>
+            <br><br>
+            <strong>Associate's Degree in Ethical Hacking <br>
+                Massachusetts Institute of Technology, US<br>
+                Graduated in 2028<br>
+                9.2 CGPA</strong>
+        </p>
+    </section>
+
+    <section id="Skills" class="box animated-box fadeInRight">
+        <h2>Skills</h2>
+        <table border="border">
+            <tr>
+                <th>Skills</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>HTML5 and CSS3</td>
+                <td>Proficiency in creating structured web pages and styling them using the latest standards.</td>
+            </tr>
+            <tr>
+                <td>Responsive Web Design</td>
+                <td>Ability to design websites that adapt to various screen sizes and devices.</td>
+            </tr>
+            <tr>
+                <td>Ethical Hacking</td>
+                <td>Capable of hacking servers and domains.</td>
+            </tr>
+            <tr>
+                <td>JavaScript and jQuery</td>
+                <td>Experience in adding</td>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>Creating a well-looking backend</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="Projects" class="box animated-box fadeInLeft">
+        <h2>Projects</h2>
+        <h3>Portfolio Website</h3>
+        <p>Designed and developed a personal portfolio website to showcase my web design projects. Used HTML, CSS, and JavaScript to create an interactive and visually appealing site.</p>
+        <h3>E-commerce Website Redesign</h3>
+        <p>Collaborated with a team to redesign an e-commerce website, focusing on improving the user interface and enhancing the overall user experience. Implemented responsive design and enhanced product pages.</p>
+        <h3>Content Management System (CMS) Customization</h3>
+        <p>Customized a CMS for a client, tailoring the system to meet their specific needs. Implemented user-friendly features, optimized database performance, and ensured seamless content updates.</p>
+        <h3>Interactive Blog Platform</h3>
+        <p>Designed and developed an interactive blog platform with user registration, comments, and real-time updates. Utilized Node.js and MongoDB for the back end, and React for the front end to create a dynamic and engaging blogging experience.</p>
+        <h3>Online Food Ordering System</h3>
+        <p>Developed a web-based food ordering system for a local restaurant, allowing customers to browse the menu, place orders, and make secure online payments. Integrated responsive design and real-time order tracking for an enhanced dining experience.</p>
+    </section>
+
+    <section id="ContactUs" class="box animated-box fadeInup">
+        <h2>Contact Information</h2>
+        <p>
+            <strong>Shashank Gowda K</strong><br>
+            <strong>Email:</strong> <a href="mailto:shashankgowdak.btech23@rvu.edu.in">shashankgowdak.btech23@rvu.edu.in</a><br>
+            <strong>Phone:</strong> <a href="tel:+7483937578">+91 7483937578</a><br>
+            <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/yourname/" target="_blank">linkedin.com/in/yourname</a><br>
+            <strong>GitHub:</strong> <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a>
+        </p>
+    </section>
+
+    <script>
+        const typed = new Typed('#header-name', {
+            strings: ['', 'Web Developer', 'Back-end Developer'],
+            typeSpeed: 100,
+            backSpeed: 100,
+            backDelay: 1000,
+            loop: true
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 My Portfolio | Designed by Shashank Gowda K</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/" target="_blank"><img src="Screenshot 2024-01-05 235116.png" width="50px" alt="instagram"></a>
+        </div>
+    </div>
+</footer>
+</html>
